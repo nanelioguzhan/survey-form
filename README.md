@@ -1,2 +1,2 @@
-# survey-form
-### One of the certification projects of freeCodeCamp
+# Survey Form
+#### One of the certification projects of freeCodeCamp
