@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Survey Form</title>
+    <link rel="stylesheet" type="text/css" href="/css/styles.css"/>
+    <body>
+        <!--header begins-->
+        <header>
+          <h1 id="title">Survey Form</h1>
+          <p class="sub-text" id="description">Thank you for taking the time to help us improve the platform</p>
+        </header>
+        <!--header end-->
+
+        <!--form start-->
+      <form id="survey-form">
+        <fieldset>
+          <label id="name-label">Name: <input type="text" id="name" placeholder="enter your name" required></label>
+          <label id="email-label">Email: <input type="email" id="email" placeholder="enter your e-mail" required/></label>
+          <label id="number-label">Number: <input type="number" id="number" min="10" max="50" placeholder="only between 10-50"/></label>
+          <label>How did you hear about us</label>
+          <select id="dropdown">
+            <option>LinkedIn</option>
+            <option>YouTube</option>
+            <option>Friends</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <p class="gender-text">Select your gender</p>
+          <label id="gender"><input type="radio" name="radio" id="radio-male " class="inline" value="male"/>Male</label>
+          <label id="gender"><input type="radio" name="radio" id="radio-female " class="inline" value="female"/>Female</label>
+        </fieldset>
+        <fieldset>
+          <p class="hobby-text">Select your hobbies</p>
+          <label class="hobbies"><input id="checkbox-basketball " class="inline" type="checkbox" value="basketball">Basketball</label>
+          <label class="hobbies"><input id="checkbox-football " class="inline" type="checkbox" value="football">Football</label>
+          <label class="hobbies"><input id="checkbox-volleyball " class="inline" type="checkbox" value="volleyball">Volleyball</label>
+        </fieldset>
+        <fieldset>
+            <p class="suggestion-text">Any comments or suggestions?</p><textarea id="comment-section" value="comment" placeholder="your comments"></textarea>
+            <input type="submit" id="submit"/>
+        </fieldset>
+      </form>
+      <!--form end-->
+
+    </body>
+  </head>
+</html>
